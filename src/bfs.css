@@ -1,0 +1,81 @@
+#root {
+    max-width: 550px;
+}
+
+.pen-controls {
+    background-color: #006c9e;
+    padding: 0;
+}
+
+.pen-controls main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.algo-handler {
+    grid-column: span 2;
+    background-color: #1c95cd !important;
+}
+
+.pen-controls main div {
+    background-color: #03a9f4;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    font-size: 2vmax;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #009adf;
+    height: fit-content;
+    padding: 10px 0;
+}
+
+.pen-controls main div:hover {
+    background-color: #1c95cd;
+}
+
+.bfs-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    aspect-ratio: 1/1;
+    background-color: blue;
+    margin: auto;
+}
+
+.bfs-grid div {
+    background-color: #eee;
+    border: 1px solid rgb(181, 181, 181);
+}
+
+.bfs-grid .wall {
+    background-color: rgb(20 20 20);
+}
+
+.bfs-grid .visited {
+    background-color: #7b7bf7;
+}
+
+.bfs-grid .goal {
+    background-color: #4CAF50;
+}
+
+.bfs-grid .start {
+    background-color: #FF9800;
+}
+
+.bfs-grid .path {
+    background-color: #267729;
+}
